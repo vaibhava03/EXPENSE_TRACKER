@@ -10,6 +10,9 @@ import Pagination from './Pagination'
  function Expense_data() {
 const token=localStorage.getItem('token');
 
+function handleRows (e) {
+  console.timeLog(e.target);
+}
 function DownloadBtn (e) {
   e.preventDefault();
     const a=document.createElement('a');
@@ -30,14 +33,13 @@ function DownloadBtn (e) {
   }
 
 const[currentPage,setCurrentPage]=useState(1);
-const[postsPerPage]=useState(10);
+const[postsPerPage,setPostsPerPage]=useState(10);
+
 
 
 const [data,setData]=useState([]);
 var [total,setTotal]=useState(0);
-// useEffect(() =>{
-//   setTotal(money);
-// },[total]);
+
 function GetExpense(e){
   
 var money=0;
@@ -64,11 +66,28 @@ const currentPosts=data.slice(indexOfFirstPost, indexOfLastPost);
 
 const paginate=(pageNumber) =>setCurrentPage(pageNumber);
 
-
+const handleSubmit =(e) =>{
+  localStorage.setItem('rows',e.target.value);
+}
+useEffect(() =>{
+  setPostsPerPage(localStorage.getItem('rows'));
+})
   return (<div>
     <header className="header">
         <h4>DAY TO DAY EXPENSES</h4>
     </header>
+    <form>
+    <label htmlFor="category">rows per page</label>
+    <select name="category" id="rowPP"   onChange={e => handleSubmit(e)}>
+            <option value="05">05</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+
+
+        </form>
     <div className="D_button" id="f_div">
         <Link to="/previous-files"><button  id="prev">see previous files</button></Link>
         <button onClick={DownloadBtn} className="D_button" id="btn">DownloadFile</button>
