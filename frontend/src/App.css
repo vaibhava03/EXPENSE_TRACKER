@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+ .body{
+    justify-content: center;
+
+ } 
+.header{
+    background-color: rgb(73, 50, 7);
+    text-align: center;
+    width:100%;
+    height:50px;
+    color:white;
+    border-bottom:0.1rem solid white;
+    font-family: rye;
+    background-image: linear-gradient(to bottom right, rgb(153, 5, 49), rgb(20, 125, 133));
+
+}
+.div1{
+    width:30%;
+    height:fit-content;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(148, 143, 143);
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Form{
+    padding:30px;
+    color:rgb(80, 42, 16);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    width:90%;
+    border-radius:10px;
+    border-width: 3px;
+    padding:6px;
+    margin-bottom: 17px;
+}
+
+#submit{
+    width: 60%;
+    background: rgb(46, 49, 87);
+    color: white;
+    border-radius:70px;
+    margin-top:10px;
+    margin-left:19%;
+    font-size:larger;
+    cursor: pointer;
+}
+/* ----------------------------------sign-up&&login-------------------------------- */
+.sign-up{
+margin-top:-20px;
+margin-left:20%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration:none;
+    color: rgb(31, 20, 131);
+  }
+  
+  a:hover {
+    color: rgb(0, 136, 34);
+
+  }
+
+#forgetP{
+    color:rgb(43, 49, 46);
+    font-size: 20px;
+}
+
+/* -----------------------------------Expense------------------------------------ */
+#description{
+    width:90%;
+    height:80px;
+    resize: none;
+    border-radius:20px;
+    padding:20px;
+    }
+    select{
+     background-color: rgb(235, 184, 90);
+     padding:5px;
+     border-radius: 5px;
+     color:rgb(0, 0, 0);
+     font-weight:700;
+    cursor: pointer;
+ }
+ select:hover{
+     background-color: azure;
+     color:black;
+ }
+ /* .div2{
+    width:100%;
+    height:fit-content;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(148, 143, 143);
+    margin: auto 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+ h3{
+     padding:9px;
+     margin-left:25%;
+     font-family: rye;
+     color:rgb(80, 35, 35);
+ }
+#divv{
+    display:flex;
+}
+ .premium_div{
+     position:fixed;
+    right:5%;
+    margin-top:1%;
+    margin-right:1%;
+    background-color:rgb(33, 57, 105);
+    width:auto;
+    height:auto;
+     }
+.data{
+padding-left: 28%;
+}
+h4{
+color:rgb(32, 179, 56);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+
+.PText{
+    border: 1px solid white;
+}
+
+.premiumBtn{
+background-color: rgb(55, 131, 238);
+width:100%;
+border-radius: 5px;
+font-size: 20px;
+font-weight: bold;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+ul{
+    padding:17px;
+    list-style:square;
+    color:rgb(200, 201, 202);
+}
+
+.darkmode{
+    background-color: rgb(12, 10, 10);
+}
+#sectionId{
+    top:0px;
+    height:auto;
+    width:250px;
+margin-left:20px;
+}
+.leaderB
+{
+background-color: rgb(142, 196, 129);
+border:4px ridge rgb(31, 23, 23);
+border-radius: 10px;
+padding-bottom:9px;
+
+}
+li{
+    list-style:none;
+    color:rgb(37, 32, 32);
+}
+.user{
+    color:white;
+    padding:10px;
+    font-size: 20px;
+    cursor:pointer;
+    padding:9px;
+}
+.HExpense{
+    display:none;
+    padding:9px;
+    color:white;
+}
+
+
+/* -----------------------expense-data--------------------------- */
+table{
+   margin:5%;
+   margin-left: 35%;
+   width:30%;
+   padding:1%;
+   border:3px ridge black;
+
+   background-color: rgb(255, 242, 223);
+}
+ th, td {
+     padding:9px;
+     border: 1px solid;
+     font-size: 20px;
+  }
+.duration{
+    margin:1px;
+margin-top:-80px;
+}
+#daily, #monthly, #weekly
+{
+    background-color: rgb(13, 109, 77);
+    padding:2px;
+    margin:5px;
+    color:white;
+    font-size: 20px;
+    cursor:pointer;
+}
+.D_button{
+    margin:1%;
+    margin-left:70%;
+    position:static;
+}
+#btn{
+    /* background-color: rgb(20, 132, 136); */
+    padding:8px;
+    color:rgb(44, 14, 14);
+    font-size:20px;
+    font-weight:bolder;
+    cursor: pointer;
+    
+}
+#prev{
+    margin:10px;
+    background-color: blanchedalmond;
+    padding:5px;
+    color:blueviolet;
+    font-weight: 600;
+    border-radius: 9px;
+}
+
+.home{
+    background-color: rgb(211, 161, 97);
+    padding:90px;
+}
+.desc{
+    background-color: rgb(241, 213, 176);
+    color:rgb(91, 51, 129);
+    font-size: 25px;
+}
+
+.ET{
+padding:1%;
+margin-left:35%;
+font-family: rye;
+color:rgb(87, 76, 62);
+}
+
+.rem{
+    background-color: rgb(241, 213, 176);
+    padding:17%;
+
+}
