@@ -18,7 +18,7 @@ function DownloadBtn (e) {
     const a=document.createElement('a');
     axios.get({
       'method':'GET',
-      'url':'http://localhost:4000/download',
+      'url':'http://3.87.125.143/download',
       'headers':{
         Authorization:token
       }, 
