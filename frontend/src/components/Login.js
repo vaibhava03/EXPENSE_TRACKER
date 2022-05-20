@@ -14,7 +14,7 @@ function Login() {
         email: emailId,
         password:password
         }
-        axios.post('http://localhost:4000/user/login', myObj)
+        axios.post('http://3.87.125.143/user/login', myObj)
         .then(res =>{
             console.log(res);
             if(res.status===200){
