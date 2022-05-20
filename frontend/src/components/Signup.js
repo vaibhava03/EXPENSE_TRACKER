@@ -17,7 +17,7 @@ function Signup() {
       password:password
     }
     console.log(myObj);
-    axios.post('http://localhost:4000/user/signup', myObj)
+    axios.post('http://3.87.125.143/user/signup', myObj)
     .then(res =>{
       console.log(res);
     }).catch(err => console.log(err));
