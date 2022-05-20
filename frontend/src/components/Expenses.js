@@ -22,7 +22,7 @@ function Expenses() {
           }
       }
       console.log(myObj);
-       axios.post("http://localhost:4000/user/expense", myObj, head)
+       axios.post("http://3.87.125.143/user/expense", myObj, head)
        .then(res =>{
            console.log(res);
        })
