@@ -17,7 +17,7 @@ function PayBtn(e){
   'Authorization':token
   }
   }
-  axios.post('http://localhost:4000/user/pay', ord, head)
+  axios.post('http://3.87.125.143/user/pay', ord, head)
   .then()
   .catch(err => console.log(err));
   setTimeout(()=>{
